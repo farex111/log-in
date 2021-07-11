@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ავტორიზაციის გვერდი</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+   <div class="container">
+       <div class="logo">
+           <img src="img/logo.svg" alt="">
+       </div>
+       <div class="line"></div>
+       <div class="login">
+           <form action="POST">
+               <div class="main_form">
+                    <div class="user right-div right-div-visible">
+                        <span class="title">სისტემაში შესვლა</span>
+                        <input type="text" placeholder="მომხმარებელი" name="user" id="user" autocomplete="off">
+                    <div class="password">
+                        <label for="pass"> <span onclick="hideandshow()"><i class="bi bi-eye-slash-fill"></i></span> </label>
+                        <input type="password" placeholder="პაროლი" id="pass" name="pass">
+                    </div>
+                    <span id="passmsg"></span>
+                    <div class="reset">
+                        <div class="checkbox">
+                            <input type="checkbox" id="check" name="check" value="checkpass">
+                            <label for="check"> დაიმახსოვრე პაროლი</label>
+                        </div>
+                        <div class="resetpass">
+                            <a class="reset" id="resetpass">დაგავიწყდა პაროლი?</a>
+                        </div>
+                    </div>
+                    <div class="numbers">
+                        <select name="numbers" id="numbers">
+                            <option value="test" selected disabled>ნომერი</option>
+                            <option value="test">test</option>
+                            <option value="test">test</option>
+                            <option value="test">test</option>
+                        </select>
+                          <div class="hover">
+                            <img src="img/Group 1696.svg" alt="">
+                            <span class="hovertext">სატესტო ტექსტი</span>
+                          </div>
+                    </div>
+                    <button id="btn" type="submit">შესვლა</button>
+                </div>
+                <div class="password_reset right-div" id="resetstep1">
+                    <span class="title">დაგავიწყდა პაროლი?!</span>
+                    <input type="text" placeholder="მომხმარებელი" name="reset-user" id="reset-user" autocomplete="off">
+                    <button id="btn" class="next-btn" type="button">შემდეგი</button>
+                </div>
+               </div>
+           </form>
+       </div>
+   </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

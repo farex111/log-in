@@ -1,0 +1,181 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    background-color: #15222C;
+    font-family: 'BPG Banner Caps';
+    color: white;
+}
+.logo {
+    width: 49.9%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+}
+.line {
+    width: 1px;
+    height: 50%;
+    background-color: #5FB2FF;
+}
+.login {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 100px;
+    position: relative;
+    animation: loganime 1.3s;
+}
+.password_reset {
+    animation: loganime 1.3s;
+    position: relative;
+}
+@keyframes loganime {
+    from{
+        bottom: -50px;
+        opacity: 0;
+    }
+    to{
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+form {
+    width: 440px;
+}
+.title {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+}
+::placeholder{
+    color: white;
+    font-size: 15px;
+    font-family: 'BPG Banner Caps';
+}
+input[type="text"],[type="password"]{
+    display: block;
+    width: 100%;
+    background-color: inherit;
+    outline: none;
+    border: 1px solid #5FB2FF;
+    padding: 20px 0 20px 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+}
+.reset {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-family: 'BPG Mrgvlovani';
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+.checkbox label {
+    font-size: 12px;
+    font-weight: 400;
+}
+.resetpass a{
+    font-size: 12px;
+    font-weight: 400;
+    color: #5FB2FF;
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+#btn {
+    width: 100%;
+    background-color: #FD0A50;
+    padding: 15px 0;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    font-family: 'BPG Banner Caps';
+    cursor: pointer;
+}
+@media screen and (max-width:1100px) {
+    .logo, .login {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+    }
+    .line{
+        display: none;
+    }
+}
+.password {
+    position: relative;
+}
+.password label {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#passmsg {
+    font-family: 'BPG Mrgvlovani';
+    font-size: 10px;
+}
+#passmsg p {
+    padding-top: 20px;
+}
+.right-div{
+    display: none;
+
+} 
+.right-div-visible{
+    display: block;
+}
+#btn{
+    margin-top: 30px;
+}
+#numbers {
+    font-family: 'BPG Banner Caps';
+    display: inline-block;
+    background-color: inherit;
+    outline: none;
+    border: 1px solid #5FB2FF;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+}
+#numbers option {
+    background-color: #15222C;
+}
+.hover{
+    display: inline-block;
+    position: relative;
+}
+.hovertext {
+    visibility: hidden;
+    width: 120px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+.hover:hover .hovertext {
+    visibility: visible;
+  }
+.numbers img {
+padding-left: 20px;
+cursor: pointer;
+}
